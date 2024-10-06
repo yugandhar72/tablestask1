@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <caption><i>A test table with merged cells</i></caption>
+        <table border="2px">
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red eyes</th>
+            </tr>
+            <tr>
+                <th colspan="1">height</th>
+                <th colspan="1">weight</th>
+            </tr>
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Female</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </table>
+    </div>
+
+    <table border="3px" cellpadding="10px" align="center" cellspacing="10px">
+        <colgroup>
+            <col style="background-color: #9b0f0f">
+            <col style="background-color: #0f0f9b">
+            <col style="background-color: chartreuse;">
+         </colgroup>
+        <tr>
+            <th>Columu 1</th>
+            <th>Columu 2</th>
+            <th>Columu 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Row1Cell1</td>
+            <td>Row1Cell2</td>
+            <td>Row1Cell3</td>
+        </tr>
+        <tr>
+            <td>Row2Cell2</td>
+            <td>Row2Cell3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row3Cell1</td>
+        </tr>
+    </table>
+
+    <table border="2px">
+        <caption><h1>Web Technologics</h1></caption>
+        <tr style="background-color: bisque;">
+            <th>Category</th>
+            <th colspan="2">Technology</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Frontend</td>
+            <td>HTML</td>
+            <td>5</td>
+            <td>
+                <p>Standard markup language for creating web pages.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>3</td>
+            <td>
+                <p>Style sheet language used for describing the presentation of a document written in HTML.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>ES6</td>
+            <td>Scripting language used to create and control dynamic website content</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Backend</td>
+            <td colspan="2">Node.js</td>
+            <td>JavaScript runtime built on Chrome's V8 JavaScript engine.</td>
+        </tr>
+        <tr>
+            <td colspan="2">Django</td>
+            <td>High-level Python web framework that encourages rapid development and clean, pragmatic design.
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">Database</td>
+            <td colspan="2">MySQL</td>
+            <td>Relational database management system based on SQL - Structured Query Language.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">MangoDB</td>
+            <td>Document-oriented NoSQL database used for high volume data storage.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
